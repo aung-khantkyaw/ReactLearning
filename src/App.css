@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-.navbar {
-  background-color: aqua;
-}
-
 .nav-item {
   text-decoration: none;
   margin: 0 10px;

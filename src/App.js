@@ -1,4 +1,7 @@
 import { useState, useRef } from "react";
+import Navbar from "./Navbar";
+import NavItem from "./NavItem";
+import Theme from "./Theme";
 import "./App.css";
 
 function Title(props) {
@@ -37,18 +40,6 @@ function AddForm(props) {
       <input type="text" ref={idRef} />
       <button type="submit">Submit</button>
     </form>
-  );
-}
-
-function Navbar(props) {
-  return <div className="navbar">{props.children}</div>;
-}
-
-function NavItem(props) {
-  return (
-    <a className="nav-item" href="{props.navLink}">
-      {props.navName}
-    </a>
   );
 }
 
@@ -107,6 +98,8 @@ export default function App() {
         <NavItem navLink="#" navName="About" />
         <NavItem navLink="#" navName="Contact" />
       </Navbar>
+
+      <Theme />
     </div>
   );
 }
